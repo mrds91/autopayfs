@@ -1,0 +1,18 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+type Query {
+  res : ResponseInfo!
+}
+
+type Mutation {
+  autopay(input: InputRequestInfo!) : ResponseInfo!
+}
+
+type ResponseInfo {
+  status: String!
+}
+
+input InputRequestInfo {
+  phoneNo: String!
+  }
